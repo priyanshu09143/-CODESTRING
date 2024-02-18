@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-gradient {
+    background: linear-gradient(rgb(0, 179, 255), rgba(0, 0, 255, 0.263), rgba(128, 0, 128, 0.413));
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.fields input {
+    background: transparent;
+
+    box-shadow: rgb(153 149 149 / 32%) 6px 4px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.091);
+    border-radius: 3px;
+    margin-top: 5px;
+    transition: all 0.2s;
+    height: 1.8rem;
+    padding: 1.4rem 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.register-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+    margin: 3rem auto;
+}
+
+.register-container {
+    box-shadow: rgba(0, 0, 0, 0.539) 1px 1px 10px;
+    border-radius: 1rem;
+    padding: 2.5rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfb;
+    margin: auto;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.register {
+    width: 100%;
+    padding: 0.4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 255, 0.263), rgba(128, 0, 128, 0.413));
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: rgba(100, 99, 99, 0.276) 1px 1px 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+a{
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 1rem ;
+}
+a:hover{
+    font-size: 1rem;
+}
+
+@media screen and (max-width : 480px) {
+    .register-page {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .fields input {
+        background: transparent;
+        box-shadow: rgb(153 149 149 / 32%) 6px 4px 6px;
+        border: 1px solid rgba(0, 0, 0, 0.091);
+        border-radius: 3px;
+        margin-top: 5px;
+        height: 0.8rem;
+        padding: 1rem 1rem;
+    }
+
+    .fields {
+        display: flex;
+        flex-direction: column;
+        margin: 0.6rem;
+    }
+
+}
+
+.fields input:hover{
+    box-shadow: rgba(153, 149, 149, 0.699) 6px 4px 6px;
+}
+
+.register:hover {
+    box-shadow: rgba(153, 149, 149, 0.331) 6px 4px 6px;
+}
+.login {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0;
+}
+.login .fields input{
+    width: 25vw;
+}
